@@ -1,0 +1,29 @@
+{
+  "name": "sms",
+  "description": "project",
+  "main": "app.js",
+  "authors": [
+    "bender.d1mon"
+  ],
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/js/libs/",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "3.1.1",
+    "underscore": "1.8.3",
+    "backbone": "1.3.3",
+    "requirejs": "2.3.2",
+    "text": "2.0.15",
+    "alertify.js": "0.3.11",
+    "components-font-awesome": "^4.7.0",
+    "d3": "^4.6.0",
+    "moment": "^2.17.1"
+  }
+}

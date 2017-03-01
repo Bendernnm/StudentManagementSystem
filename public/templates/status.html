@@ -1,0 +1,11 @@
+<img src="../uploads/<%=avatar%>" width="50px" height="50px" alt="IMG"/>
+<span id="profile_name"><%=name%></span>
+<span>
+    [<%=(access & 8 && 'Admin')||(access & 4 && 'Teacher')||(access & 2 && 'Student')||'User'%>]
+</span>
+<% if(access & 1){%>
+<a href="#notification">
+    <span class="fa fa-bell"></span>
+</a>
+<%}%>
+<button>Sign out</button>

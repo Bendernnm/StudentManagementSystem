@@ -1,0 +1,14 @@
+<a href="#">Home</a>
+<a href="#teachers">Teachers</a>
+<a href="#groups">Groups</a>
+<a href="#blogs">Blogs</a>
+<% if(access & 4){%>
+<a href="#statistics">Statistics</a>
+<%}
+if(access & 8){
+%>
+<a href="#verification">Verification</a>
+<%}
+if(access & 8){%>
+<a href="#ccp">Central control panel</a>
+<%}%>

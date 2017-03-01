@@ -1,0 +1,17 @@
+<%if(author == check){%>
+<span class="fa fa-pencil-square-o"></span>
+<%}%>
+
+<%if(!follower){%>
+<span class="fa fa-tag"></span>
+<%}%>
+
+
+<%if(sessionAccess&8){%>
+<span class="fa fa-trash-o"></span>
+<%}%>
+<div align="center" style="border: 1px solid black">
+    <h3><%=name%></h3>
+    <h4><%=author%></h4>
+</div>
+<br>

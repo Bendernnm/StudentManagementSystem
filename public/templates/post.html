@@ -1,0 +1,22 @@
+<div style="border: 1px solid black">
+    <div>
+        <h3><%=data.name%></h3>
+        <br>
+        <p><%=data.text%></p>
+        <div class="attachment_files"></div>
+    </div>
+    <div>
+        <span class="fa fa-plus"><%=data.like%></span>
+        <span class="fa fa-minus"><%=data.dislike%></span>
+        <span class="fa fa-comment"><%=data.comments.length%></span>
+        <span><%=data.date%></span>
+        <%if(data.file){%>
+        <br>
+        <h3><a href="../files/<%=data.file%>" download>file</a></h3>
+        <%}
+        if(data.sessionAccess&8){%>
+        <span class="fa fa-trash-o"></span>
+        <%}%>
+    </div>
+    <div class="comments"></div>
+</div>

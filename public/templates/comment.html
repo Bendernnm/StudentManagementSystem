@@ -1,0 +1,11 @@
+<br>
+<%if(sessionAccess&8){%>
+<span class="fa fa-trash-o"></span>
+<%}%>
+<h2><%=author.name%></h2>
+<br>
+<img src="../uploads/<%=author.avatar%>" width="70" height="70" alt="avatar">
+<p><%=text%></p>
+<span><%=date%></span>
+<hr>
+<br>

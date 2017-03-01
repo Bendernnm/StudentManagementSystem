@@ -1,0 +1,19 @@
+<tr>
+    <td><%=number%></td>
+    <td><img src="../uploads/<%=avatar%>" alt="avatar" width="60" height="60"></td>
+    <td class="student_name"><%=name%></td>
+    <td><%=date%></td>
+
+    <td>
+        <%if(sessionAccess & 8){%>
+        <span class="fa fa-pencil"></span>
+        <span class="fa fa-trash"></span>
+        <%}%>
+        <%if(sessionAccess & 4){%>
+        <span class="fa fa-sort-numeric-asc"></span>
+        <%}%>
+        <%if((sessionAccess & 4) || (sessionAccess & 8)){%>
+        <span class="fa fa-minus-circle"></span>
+        <%}%>
+    </td>
+</tr>
